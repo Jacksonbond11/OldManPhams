@@ -5,15 +5,15 @@ const ImageText = () => {
     <div className="mt-2">
       <h1 className="text-3xl font-bold m-auto text-center">Meet the Owner</h1>
       <div className="divider"></div>
-      <div className="flex justify-content-between max-w-5xl m-auto mt-6">
+      <div className="md:flex justify-content-between max-w-5xl m-auto mt-6 p-2">
         <img
           src="taiHeadshot.png"
           alt="Image"
           width="300px"
           height="200px"
-          className="mr-4 rounded-md "
+          className="md:mr-4 rounded-md m-auto"
         />
-        <div className="">
+        <div className="md:m-0 mt-2">
           <p className="text-xl">
             Tai Pham is more than just a passionate advocate for lawn care -
             he's a true enthusiast with a lifelong love affair with the humble
