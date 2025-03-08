@@ -3,7 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <div className="mt-2">
-      <h1 className="text-3xl font-bold m-auto text-center">Services</h1>
+      <h1 className="text-3xl font-bold m-auto text-center" id="services">
+        Services
+      </h1>
       <div className="divider"></div>
       <div className="md:flex justify-content-between max-w-5xl m-auto mt-6 p-2 items-center text-center md:text-left">
         <div className="md:m-0 mt-2 text-lg">

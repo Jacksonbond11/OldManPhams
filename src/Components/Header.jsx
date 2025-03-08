@@ -9,10 +9,10 @@ function Header() {
       <div className="">
         <ul className="menu menu-horizontal px-1 flex md:gap-4 gap-2">
           <li>
-            <a>Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

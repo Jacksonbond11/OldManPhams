@@ -3,7 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="p-12">
-      <h1 className="text-3xl font-bold m-auto text-center mt-6 mb-6">
+      <h1
+        className="text-3xl font-bold m-auto text-center mt-6 mb-6"
+        id="contact"
+      >
         Contact
       </h1>
       <div className="divider"></div>
