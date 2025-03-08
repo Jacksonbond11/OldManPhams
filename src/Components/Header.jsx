@@ -2,9 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="navbar bg-base-100 shadow-md flex justify-between font-bold p-6 ">
+    <div className="navbar bg-base-100 shadow-md flex justify-between font-bold">
       <div className="">
-        <a className="btn btn-ghost md:text-xl text-md">Old Man Pham's</a>
+        <img src="TaiSideLogo.png" className="h-32" />
       </div>
       <div className="">
         <ul className="menu menu-horizontal px-1 flex md:gap-4 gap-2">
