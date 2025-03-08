@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="navbar bg-base-100 shadow-md flex justify-between font-bold">
       <div className="">
-        <img src="TaiSideLogo.png" className="h-32" />
+        <img src="TaiSideLogo.png" className="md:h-32 h-16" />
       </div>
       <div className="">
         <ul className="menu menu-horizontal px-1 flex md:gap-4 gap-2">
