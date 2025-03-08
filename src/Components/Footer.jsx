@@ -21,7 +21,7 @@ const Footer = () => {
           Providing lawncare services since 2025
         </p>
       </aside>
-      <nav>
+      {/* <nav>
         <h6 className="footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <a>
@@ -58,7 +58,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </nav>
+      </nav> */}
     </footer>
   );
 };
