@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    <footer className="footer sm:footer-horizontal text-neutral-content p-10 bg-[#4b5717]">
       <aside>
         <img src="TaiLogo.jpg" className="h-24" />
         <p>

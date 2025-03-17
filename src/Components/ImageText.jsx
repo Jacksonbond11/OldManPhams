@@ -2,9 +2,9 @@ import React from "react";
 
 const ImageText = () => {
   return (
-    <div className="mt-2">
+    <div className="mt-2 bg-[#f6f6eb] text-[#4b5717] p-12">
       <h1 className="text-3xl font-bold m-auto text-center">Meet the Owner</h1>
-      <div className="divider"></div>
+      <div className="border-b-2"></div>
       <div className="md:flex justify-content-between max-w-5xl m-auto mt-6 p-2">
         <img
           src="taiHeadshot.png"

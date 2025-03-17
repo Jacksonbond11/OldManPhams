@@ -5,7 +5,7 @@ const Hero = () => {
     <div
       className="hero min-h-[50vh] flex flex-col justify-end"
       style={{
-        backgroundImage: "url(grass.jpg)",
+        backgroundImage: "url(grassy.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "bottom center",
       }}
@@ -20,7 +20,7 @@ const Hero = () => {
             Get started with a $5 discount on your first cut! Schedule now and
             experience our cutting-edge service for yourself!
           </p>
-          <button className="btn btn-primary">Schedule your services</button>
+          <button className="btn bg-[#afae81]">Schedule your services</button>
         </div>
       </div>
     </div>
