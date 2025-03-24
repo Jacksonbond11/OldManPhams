@@ -20,7 +20,7 @@ const Hero = () => {
             Get started with a $5 discount on your first cut! Schedule now and
             experience our cutting-edge service for yourself!
           </p>
-          <a href="tel:405-379-7998" className="">
+          <a href="tel:405-397-7998" className="">
             <button className="btn bg-[#afae81]">Schedule your services</button>
           </a>
         </div>

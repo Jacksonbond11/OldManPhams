@@ -15,7 +15,7 @@ const Contact = () => {
           <h2 className="font-bold text-2xl mt-2">
             Get your lawn cared for today!
           </h2>
-          <a href="tel:405-379-7998" className="">
+          <a href="tel:405-397-7998" className="">
             <button className="btn bg-[#afae81] mt-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Contact = () => {
                   </g>
                 </g>
               </svg>
-              405-379-7998
+              405-397-7998
             </button>
           </a>
         </div>

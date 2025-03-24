@@ -9,6 +9,7 @@ import ImageText from "./Components/ImageText";
 import Services from "./Components/Services";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Donate from "./Components/Donate";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <ImageText />
         <Services />
+        <Donate />
         <Contact />
         <Footer />
       </div>
