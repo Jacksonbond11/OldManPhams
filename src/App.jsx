@@ -49,14 +49,14 @@ function App() {
               }
             />
             <Route path="/blog" element={<Blog />} />
-            {/* <Route
+            <Route
               path="/*"
               element={
                 <div className="p-12 text-center text-[#4b5717]">
                   404 - Page Not Found
                 </div>
               }
-            /> */}
+            />
           </Routes>
           <Footer />
         </div>
