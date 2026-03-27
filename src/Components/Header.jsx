@@ -1,34 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="bg-[#4b5717] shadow-md flex justify-between font-bold md:h-32 h-16">
-      <a href="/">
-        <div className="">
-          <img src="TaiSideLogo.png" className="md:h-32 h-16" />
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#4b5717] shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <a href="/" className="flex-shrink-0">
+            <img src="TaiSideLogo.png" className="h-16 sm:h-20" alt="Old Man Pham's Lawn Care" />
+          </a>
+          
+          <nav className="hidden md:flex items-center gap-3">
+            <a
+              href="/#services"
+              className="px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg hover:bg-[#8a8a65] transition-all duration-200 hover:scale-105"
+            >
+              Services
+            </a>
+            <a
+              href="/#contact"
+              className="px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg hover:bg-[#8a8a65] transition-all duration-200 hover:scale-105"
+            >
+              Contact
+            </a>
+            <a
+              href="/blog"
+              className="px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg hover:bg-[#8a8a65] transition-all duration-200 hover:scale-105"
+            >
+              Blog
+            </a>
+          </nav>
+
+          <button
+            className="md:hidden p-2 text-[#afae81]"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {isMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
-      </a>
-      <div className="flex md:flex-wrap justify-content-end md:pt-24 pt-8 gap-2 md:text-xl text-sm">
-        <a
-          href="/#services"
-          className="bg-[#afae81] rounded-t-lg md:w-28 w-20 text-center hover:cursor-pointer hover:bg-[#8a8a65]"
-        >
-          <div className="m-auto">Services</div>
-        </a>
-        <a
-          href="/#contact"
-          className="bg-[#afae81] rounded-t-lg md:w-28 w-20 text-center hover:cursor-pointer hover:bg-[#8a8a65]"
-        >
-          <div>Contact</div>
-        </a>
-        <a
-          href="/blog"
-          className="bg-[#afae81] rounded-t-lg md:w-28 w-20 text-center hover:cursor-pointer hover:bg-[#8a8a65]"
-        >
-          <div>Blog</div>
-        </a>
+
+        {isMenuOpen && (
+          <nav className="md:hidden pb-4 flex flex-col gap-2">
+            <a href="/#services" className="block px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg text-center">Services</a>
+            <a href="/#contact" className="block px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg text-center">Contact</a>
+            <a href="/blog" className="block px-4 py-2 text-sm font-semibold text-[#4b5717] bg-[#afae81] rounded-lg text-center">Blog</a>
+          </nav>
+        )}
       </div>
-    </div>
+    </header>
   );
 }
 

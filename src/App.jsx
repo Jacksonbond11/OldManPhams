@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Donate from "./Components/Donate";
 import Blog from "./Components/Blog";
+import BlogPost from "./Components/BlogPost";
 
 function ScrollHandler({ children }) {
   const location = useLocation();
@@ -33,31 +34,34 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollHandler>
-        <div className="bg-[#f6f6eb]">
+        <div className="bg-[#f6f6eb] min-h-screen">
           <Header />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <ImageText />
-                  <Services />
-                  <Donate />
-                  <Contact />
-                </>
-              }
-            />
-            <Route path="/blog" element={<Blog />} />
-            <Route
-              path="/*"
-              element={
-                <div className="p-12 text-center text-[#4b5717]">
-                  404 - Page Not Found
-                </div>
-              }
-            />
-          </Routes>
+          <main className="pt-20">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <ImageText />
+                    <Services />
+                    <Donate />
+                    <Contact />
+                  </>
+                }
+              />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
+              <Route
+                path="/*"
+                element={
+                  <div className="p-12 text-center text-[#4b5717]">
+                    404 - Page Not Found
+                  </div>
+                }
+              />
+            </Routes>
+          </main>
           <Footer />
         </div>
       </ScrollHandler>
