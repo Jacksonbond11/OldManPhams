@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Donate from "./Components/Donate";
 import Blog from "./Components/Blog";
 import BlogPost from "./Components/BlogPost";
+import Gallery from "./Components/Gallery";
 
 function ScrollHandler({ children }) {
   const location = useLocation();
@@ -43,8 +44,9 @@ function App() {
                 element={
                   <>
                     <Hero />
-                    <ImageText />
+                    <Gallery />
                     <Services />
+                    <ImageText />
                     <Donate />
                     <Contact />
                   </>

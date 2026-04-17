@@ -27,23 +27,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-
-      <div className="bg-[#f6f6eb] py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#4b5717] mb-4">
-            Our Work
-          </h2>
-          <div className="w-24 h-1 bg-[#afae81] mx-auto mb-8 rounded-full"></div>
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="/backyard.jpg"
-              alt="Beautiful backyard transformation"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-      </div>
-    </>
+</>
   );
 };
 
