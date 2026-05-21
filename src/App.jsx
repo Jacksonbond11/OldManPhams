@@ -12,6 +12,7 @@ import Donate from "./Components/Donate";
 import Blog from "./Components/Blog";
 import BlogPost from "./Components/BlogPost";
 import Gallery from "./Components/Gallery";
+import LocationPage from "./Components/LocationPage";
 
 function ScrollHandler({ children }) {
   const location = useLocation();
@@ -54,6 +55,7 @@ function App() {
               />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/landscaping/:city" element={<LocationPage />} />
               <Route
                 path="/*"
                 element={
